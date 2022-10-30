@@ -22,25 +22,25 @@
 // 
 Default 
         Skill = 50 
-        Aggression = 50 
+        Aggression = 75 
         ReactionTime = 0.3 
         AttackDelay = 0 
         Teamwork = 75 
-        AimFocusInitial = 20                    // initial focus spread in degrees (from desired center) 
+        AimFocusInitial = 10                    // initial focus spread in degrees (from desired center) 
         AimFocusDecay = 0.7                     // how much focus shrinks per second (.25 = 25% of size after 1 sec) 
-        AimFocusOffsetScale = 0.30              // controls accuracy when tracking to target (0 == perfect, should always be < 1) 
-        AimfocusInterval = 0.8                  // how often focus is adjusted (smaller intervals means better movement tracking) 
+        AimFocusOffsetScale = 0.20              // controls accuracy when tracking to target (0 == perfect, should always be < 1) 
+        AimfocusInterval = 0.5                  // how often focus is adjusted (smaller intervals means better movement tracking) 
         WeaponPreference = vest 
         Cost = 0 
         Difficulty = NORMAL 
         VoicePitch = 100 
         Skin = 0 
         LookAngleMaxAccelNormal = 20000.0 
-        LookAngleStiffnessNormal = 1000.0 
-        LookAngleDampingNormal = 100.0 
+        LookAngleStiffnessNormal = 5000.0 
+        LookAngleDampingNormal = 45.0 
         LookAngleMaxAccelAttacking = 20000.0 
-        LookAngleStiffnessAttacking = 1000.0 
-        LookAngleDampingAttacking = 100.0 
+        LookAngleStiffnessAttacking = 5200.0 
+        LookAngleDampingAttacking = 40.0 
 End 
 
 //---------------------------------------------------------------------------- 
@@ -53,42 +53,79 @@ End
 // weapon preference templates 
 
 Template SniperPro 
+        WeaponPreference = vest  
+	WeaponPreference = defuser
+	
         WeaponPreference = awp 
-        WeaponPreference = m4a1 
+		WeaponPreference = sg556 
+	WeaponPreference = m4a1
+        WeaponPreference = m4a1_silencer
+                WeaponPreference = fiveseven 
+		WeaponPreference = defuser
+		WeaponPreference = vesthelm
         WeaponPreference = ak47 
-        WeaponPreference = vest 
-                //WeaponPreference = fiveseven 
-        //WeaponPreference = tec9 
+		WeaponPreference = vesthelm
+        	WeaponPreference = tec9 
 End 
 
 Template RiflePro 
-        WeaponPreference = ak47 
-        WeaponPreference = m4a1 
         WeaponPreference = vest 
+        WeaponPreference = defuser
+	
+        WeaponPreference = ak47 
+		WeaponPreference = vesthelm
+        	WeaponPreference = tec9 
+	WeaponPreference = m4a1
+        WeaponPreference = m4a1_silencer
+                WeaponPreference = fiveseven 
+		WeaponPreference = defuser
+		WeaponPreference = vesthelm
         WeaponPreference = famas 
         WeaponPreference = galilar 
-        //WeaponPreference = fiveseven 
-        //WeaponPreference = tec9 
+	WeaponPreference = P250
+        WeaponPreference = fiveseven 
+        WeaponPreference = tec9 
 End 
 
 Template Rifle 
-        WeaponPreference = m4a1 
-        WeaponPreference = ak47 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = ak47 
+		WeaponPreference = vesthelm
+        	WeaponPreference = tec9 
+	WeaponPreference = m4a1
+        WeaponPreference = m4a1_silencer
+                WeaponPreference = fiveseven 
+		WeaponPreference = defuser
+		WeaponPreference = vesthelm
         WeaponPreference = famas 
         WeaponPreference = galilar 
                 //WeaponPreference = tec9 
 End 
 
 Template RifleT 
-        WeaponPreference = ak47 
-        WeaponPreference = m4a1 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = ak47 
+		WeaponPreference = vesthelm
+        	WeaponPreference = tec9 
+	WeaponPreference = m4a1
+        WeaponPreference = m4a1_silencer
+                WeaponPreference = fiveseven 
+		WeaponPreference = defuser
+		WeaponPreference = vesthelm
         WeaponPreference = galilar 
         WeaponPreference = famas 
                 //WeaponPreference = tec9 
 End 
 
 Template Punch 
-        WeaponPreference = aug 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = aug 
         WeaponPreference = sg556 
         WeaponPreference = famas 
         WeaponPreference = galilar 
@@ -97,7 +134,10 @@ Template Punch
 End 
 
 Template PunchT 
-        WeaponPreference = sg556 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = sg556 
         WeaponPreference = aug 
         WeaponPreference = galilar 
         WeaponPreference = famas 
@@ -106,7 +146,10 @@ Template PunchT
 End 
 
 Template Sniper 
-        WeaponPreference = awp 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = awp 
         WeaponPreference = scout 
         WeaponPreference = famas 
         WeaponPreference = galilar 
@@ -115,7 +158,10 @@ Template Sniper
 End 
 
 Template Power 
-        WeaponPreference = m249 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = m249 
         WeaponPreference = xm1014 
         WeaponPreference = nova 
         WeaponPreference = mp9 
@@ -125,7 +171,10 @@ Template Power
 End 
 
 Template Shotgun 
-        WeaponPreference = mag7 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = mag7 
         WeaponPreference = xm1014                         
         WeaponPreference = nova 
         WeaponPreference = mp7 
@@ -134,7 +183,10 @@ Template Shotgun
 End 
 
 Template Spray 
-        WeaponPreference = p90 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = p90 
         WeaponPreference = mp9 
         WeaponPreference = mac10 
         WeaponPreference = elite 
@@ -142,7 +194,10 @@ Template Spray
 End 
 
 Template AutoSniper 
-        WeaponPreference = g3sg1 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = g3sg1 
         WeaponPreference = scar20 
         WeaponPreference = galilar 
         WeaponPreference = famas 
@@ -150,7 +205,10 @@ Template AutoSniper
 End 
 
 Template AutoSniperT 
-        WeaponPreference = scar20 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = scar20 
         WeaponPreference = g3sg1 
         WeaponPreference = famas 
         WeaponPreference = galilar 
@@ -158,7 +216,10 @@ Template AutoSniperT
 End 
 
 Template OtherWeapons 
-        WeaponPreference = negev 
+        WeaponPreference = vest 
+	WeaponPreference = defuser
+	
+	WeaponPreference = negev 
         WeaponPreference = sawedoff 
         WeaponPreference = bizon 
         //WeaponPreference = fn57 
@@ -178,7 +239,7 @@ Template EliteAwp
         AimFocusInitial = 0.0
         AimFocusDecay = 0.01
         AimFocusOffsetScale = 0.0
-        AimfocusInterval = 0.0
+        AimfocusInterval = 0.01
 End 
 
 Template ElitePassive 
@@ -194,7 +255,7 @@ Template ElitePassive
         AimFocusInitial = 0.0
         AimFocusDecay = 0.01
         AimFocusOffsetScale = 0.0
-        AimfocusInterval = 0.00
+        AimfocusInterval = 0.001
 End 
 
 Template Elite 
@@ -210,7 +271,7 @@ Template Elite
         AimFocusInitial = 0.0
         AimFocusDecay = 0.01 
         AimFocusOffsetScale = 0.0
-        AimfocusInterval = 0.0
+        AimfocusInterval = 0.01
 End 
 
 Template ExpertAwp 
@@ -574,7 +635,7 @@ ElitePassive+RiflePro "blameF"
         VoicePitch = 112 
 End 
 
-Elite+RiflePro "Boobl4" 
+Elite+RiflePro "Boombl4" 
 		Difficulty = EXPERT+NORMAL+HARD 
         VoicePitch = 88 
 End 
