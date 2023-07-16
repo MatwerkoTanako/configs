@@ -35,12 +35,12 @@ Default
         Difficulty = NORMAL 
         VoicePitch = 100 
         Skin = 0 
-        LookAngleMaxAccelNormal = 200000.0 
-        LookAngleStiffnessNormal = 10000.0 
-        LookAngleDampingNormal = 1000.0 
-        LookAngleMaxAccelAttacking = 200000.0 
-        LookAngleStiffnessAttacking = 10000.0 
-        LookAngleDampingAttacking = 1000.0 
+        LookAngleMaxAccelNormal = 50000.0 
+        LookAngleStiffnessNormal = 2000.0 
+        LookAngleDampingNormal = 100.0 
+        LookAngleMaxAccelAttacking = 50000.0 
+        LookAngleStiffnessAttacking = 2000.0 
+        LookAngleDampingAttacking = 100.0 
 End 
 
 //---------------------------------------------------------------------------- 
