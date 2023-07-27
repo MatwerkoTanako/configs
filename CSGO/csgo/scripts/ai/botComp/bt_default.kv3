@@ -42,48 +42,48 @@
 								// memorize enemies through vision
 								{
 									type = "subtree"
-									file = "Memory_/bt_memorize_enemies_vision.kv3"
+									file = "scripts/ai/botComp/Memory_/bt_memorize_enemies_vision.kv3"
 									name = "MemorizeEnemiesVision"
 								},
 								// memorize noises happening right now
 								{
 									type = "subtree"
-									file = "Memory_/bt_memorize_noises.kv3"
+									file = "scripts/ai/botComp/Memory_/bt_memorize_noises.kv3"
 									name = "MemorizeNoises"
 								},
 								// record the nearest memorized event to investigate
 								{
 									type = "subtree"
-									file = "Memory_/bt_memorize_nearest_investigation.kv3"
+									file = "scripts/ai/botComp/Memory_/bt_memorize_nearest_investigation.kv3"
 									name = "MemorizeNearestInvestigation"
 								},
 								// memorize incoming grenades
 								{
 									type = "subtree"
-									file = "Grenades_/bt_memorize_area_damage_grenades.kv3"
+									file = "scripts/ai/botComp/Grenades_/bt_memorize_area_damage_grenades.kv3"
 									name = "MemorizeAreaDamageGrenades"
 								},
 								{
 									type = "subtree"
-									file = "Grenades_/bt_memorize_area_damage_infernos.kv3"
+									file = "scripts/ai/botComp/Grenades_/bt_memorize_area_damage_infernos.kv3"
 									name = "MemorizeInfernoDamage"
 								},
 								// memorize incoming damage
 								{
 									type = "subtree"
-									file = "Memory_/bt_memorize_damage.kv3"
+									file = "scripts/ai/botComp/Memory_/bt_memorize_damage.kv3"
 									name = "MemorizeDamage"
 								},
 								// memorize threats
 								{
 									type = "subtree"
-									file = "Memory_/bt_memorize_threats.kv3"
+									file = "scripts/ai/botComp/Memory_/bt_memorize_threats.kv3"
 									name = "MemorizeThreats"
 								},
 								// memorize whether we're standing on damaging area
 								{
 									type = "subtree"
-									file = "Grenades_/bt_memorize_area_damage_current.kv3"
+									file = "scripts/ai/botComp/Grenades_/bt_memorize_area_damage_current.kv3"
 									name = "MemorizeAreaDamageCurrent"
 								}
 							]
@@ -125,7 +125,7 @@
 								
 								{
 									type = "subtree"
-									file = "Movement_/bt_attack.kv3"
+									file = "scripts/ai/botComp/Movement_/bt_attack.kv3"
 									name = "Attack"
 								},
 								
@@ -150,7 +150,7 @@
 								
 								{
 									type = "subtree"
-									file = "Memory_/bt_investigate_closest_memorized_event.kv3"
+									file = "scripts/ai/botComp/Memory_/bt_investigate_closest_memorized_event.kv3"
 									name = "InvestigateClosestMemorizedEvent"
 								},
 								
@@ -160,7 +160,7 @@
 									[
 										{
 											type = "subtree"
-											file = "Movement_/bt_flee_area_damage_threats.kv3"
+											file = "scripts/ai/botComp/Movement_/bt_flee_area_damage_threats.kv3"
 											name = "FleeAreaDamageThreats"
 										},
 										
@@ -169,7 +169,7 @@
 											child =
 											{
 												type = "subtree"
-												file = "Movement_/bt_look_around.kv3"
+												file = "scripts/ai/botComp/Movement_/bt_look_around.kv3"
 												name = "LookAround"
 											}
 										}
@@ -178,27 +178,27 @@
 								
 								{
 									type = "subtree"
-									file = "Movement_/bt_attack_damage_inflictor_smoke.kv3"
+									file = "scripts/ai/botComp/Movement_/bt_attack_damage_inflictor_smoke.kv3"
 									name = "AttackDamageInflictorSmoke"
 								},
 								
 								/***
 								{
 									type = "subtree"
-									file = "Movement_/bt_face_damage_inflictor.kv3"
+									file = "scripts/ai/botComp/Movement_/bt_face_damage_inflictor.kv3"
 									name = "FaceDamageInflictor"
 								},
 								***/
 								
 								{
 									type = "subtree"
-									file = "Movement_/bt_clear_threats_within_fov.kv3"
+									file = "scripts/ai/botComp/Movement_/bt_clear_threats_within_fov.kv3"
 									name = "ClearThreatsWithinFov"
 								},
 								
 								{
 									type = "subtree"
-									file = "Movement_/bt_select_nearby_threat.kv3"
+									file = "scripts/ai/botComp/Movement_/bt_select_nearby_threat.kv3"
 									name = "SelectNearbyThreat"
 								},
 								
@@ -221,7 +221,7 @@
 										child =
 										{
 											type = "subtree"
-											file = "Bomb_/bt_pickup_bomb_if_nearby.kv3"
+											file = "scripts/ai/botComp/Bomb_/bt_pickup_bomb_if_nearby.kv3"
 											name = "PickupTheBomb"
 										}
 									}
@@ -241,7 +241,7 @@
 											},
 											{
 												type = "subtree"
-												file = "Bomb_/bt_plant_bomb_if_owned.kv3"
+												file = "scripts/ai/botComp/Bomb_/bt_plant_bomb_if_owned.kv3"
 												name = "PlantIfOwned"
 											},
 										]
@@ -250,7 +250,7 @@
 								
 								{
 									type = "subtree"
-									file = "Bomb_/bt_plant_bomb_if_covered.kv3"
+									file = "scripts/ai/botComp/Bomb_/bt_plant_bomb_if_covered.kv3"
 									name = "PlantIfCovered"
 								},
 								
@@ -273,7 +273,7 @@
 										child =
 										{
 											type = "subtree"
-											file = "Bomb_/bt_defend_bomb.kv3"
+											file = "scripts/ai/botComp/Bomb_/bt_defend_bomb.kv3"
 											name = "DefendTheBomb"
 										}
 									}
@@ -298,7 +298,7 @@
 										child =
 										{
 											type = "subtree"
-											file = "Bomb_/bt_defuse_bomb.kv3"
+											file = "scripts/ai/botComp/Bomb_/bt_defuse_bomb.kv3"
 											name = "DefuseBomb"
 										}
 									}
@@ -345,17 +345,17 @@
 												},
 												{
 													type = "subtree"
-													file = "Movement_/bt_clear_threats_within_fov.kv3"
+													file = "scripts/ai/botComp/Movement_/bt_clear_threats_within_fov.kv3"
 													name = "ClearThreatsWithinFov"
 												},
 												{
 													type = "subtree"
-													file = "Movement_/bt_select_nearby_threat.kv3"
+													file = "scripts/ai/botComp/Movement_/bt_select_nearby_threat.kv3"
 													name = "SelectNearbyThreat"
 												},
 												{
 													type = "subtree"
-													file = "Movement_/bt_look_around.kv3"
+													file = "scripts/ai/botComp/Movement_/bt_look_around.kv3"
 													name = "LookAround"
 												},
 											]
